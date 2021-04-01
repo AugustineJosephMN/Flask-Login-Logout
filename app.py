@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+app.config['SQLALCHEMY_DATABASE_URI']='postgres://ktxwalekbdnydk:e1d5003cfbd6e097fced63538db41e5551dbb3cf611f67d7b9eafafe16dccb56@ec2-52-71-161-140.compute-1.amazonaws.com:5432/d9tcd8skpd8cmg'
 db = SQLAlchemy(app)
 
 
@@ -74,6 +74,6 @@ def logout():
 
 if __name__ == '__main__':
     db.create_all()
-    app.secret_key = "123"
+    app.secret_key = "e1d5003cfbd6e097fced63538db41e5551dbb3cf611f67d7b9eafafe16dccb56"
     app.run(debug=True)
     
