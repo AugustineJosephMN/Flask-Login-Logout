@@ -49,7 +49,7 @@ def login():
             else:
                 return 'Dont Login'
         except:
-            return "Dont Login"
+            return "Can't Login"
 
 
 @app.route('/register/', methods=['GET', 'POST'])
